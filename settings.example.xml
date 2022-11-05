@@ -1,0 +1,16 @@
+<settings xmlns="http://maven.apache.org/SETTINGS/1.1.0">
+    <profiles>
+        <profile>
+            <id>jdbc-deploy</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <jdbcDeployUrl>jdbc:h2:file:~/jdbcSample</jdbcDeployUrl>
+                <jdbcDeployLogin>exampleLoginFromSettings</jdbcDeployLogin>
+                <jdbcDeployPassword>examplePasswordFromSettings</jdbcDeployPassword>
+            </properties>
+        </profile>
+    </profiles>
+
+</settings>
